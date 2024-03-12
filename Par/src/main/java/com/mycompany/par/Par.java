@@ -1,8 +1,10 @@
+package com.mycompany.Par;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
+import java.util.Scanner;
 
-package com.mycompany.par;
 
 /**
  *
@@ -11,6 +13,15 @@ package com.mycompany.par;
 public class Par {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese un valor: ");
+        int numero = scanner.nextInt();
+
+        if (numero % 2 == 0) {
+            System.out.println(numero + " es par.");
+        } else {
+            System.out.println(numero + " es impar.");
+        }
     }
 }
+   
